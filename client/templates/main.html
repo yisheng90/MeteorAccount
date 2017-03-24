@@ -7,11 +7,10 @@
     <div class="container">
     <h1>Welcome to Meteor,
       {{#if currentUser}}
-      {{currentUser.profile.name}}
+      {{currentUser.profile.name}}.
       {{else}}
-      anonymous
+      anonymous.
       {{/if}}
-      .
     </h1>
     {{#if currentUser}}
     {{else}}
