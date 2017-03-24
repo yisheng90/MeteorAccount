@@ -1,0 +1,23 @@
+<template name="home">
+  <head>
+    <title>Meteor User Account</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Welcome to Meteor,
+      {{#if currentUser}}
+      {{currentUser.profile.name}}
+      {{else}}
+      anonymous
+      {{/if}}
+      .
+    </h1>
+    {{#if currentUser}}
+    {{else}}
+    {{> login}}
+    <a href="{{pathFor 'register'}}">No account? register here</a>
+    {{/if}}
+    </div>
+  </body>
+</template>
