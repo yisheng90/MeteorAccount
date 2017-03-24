@@ -33,6 +33,8 @@ Joyce registered on the website and forgot what she typed for her password.
 
 
 # The proposed solution
+As a registered user, I would like to reset my password so that I can regain
+my account access.
 
 ## The basic challenge
 Allow user to reset their password via a specially crafted url.
