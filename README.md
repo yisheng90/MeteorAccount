@@ -26,3 +26,19 @@ Client side Blaze template can be found inside `client/template` folder.
 Server side code are stored in `server` folder.
 
 `lib/router` contains the routing information
+
+
+# The problem story
+Joyce registered on the website and forgot what she typed for her password.
+
+
+# The proposed solution
+
+## The basic challenge
+Allow user to reset their password via a specially crafted url.
+
+## The pro challenge
+Send the specially crafted url via email to the user.
+
+## The bonus challenge
+Fix the design flaw in the registration form that allow this problem to happen.
