@@ -10,6 +10,7 @@ Template.forgotpassword.events({
         template.find('.error').textContent = "Can't locate user, please try again";
       } else {
         console.log(token)
+        Router.go('home')
       }
     })
   }
