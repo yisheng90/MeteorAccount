@@ -5,17 +5,21 @@
 
   <body>
     <div class="container">
+    <div class="flash"></div>
     <h1>Welcome to Meteor,
       {{#if currentUser}}
-      {{currentUser.profile.name}}.
+        {{currentUser.profile.name}}.
       {{else}}
-      anonymous.
+        anonymous.
       {{/if}}
     </h1>
     {{#if currentUser}}
+      {{> logout}}
     {{else}}
-    {{> login}}
-    <a href="{{pathFor 'register'}}">No account? register here</a>
+      {{> login}}
+      <a href="{{pathFor 'register'}}">No account? register here</a>
+      <br>
+      <a href="{{pathFor 'forgotpassword'}}">Forgot Password</a>
     {{/if}}
     </div>
   </body>
