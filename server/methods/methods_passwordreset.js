@@ -5,6 +5,8 @@ Meteor.methods({
     return user;
   },
   requestPasswordToken (email) {
+
+    //Search user by email
     let user = Accounts.findUserByEmail(email)
     let user_id = user._id
 
