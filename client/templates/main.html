@@ -13,6 +13,7 @@
       {{/if}}
     </h1>
     {{#if currentUser}}
+    {{> logout}}
     {{else}}
     {{> login}}
     <a href="{{pathFor 'register'}}">No account? register here</a>
