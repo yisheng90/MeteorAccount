@@ -36,11 +36,22 @@ Joyce registered on the website and forgot what she typed for her password.
 As a registered user, I would like to reset my password so that I can regain
 my account access.
 
+
 ## The basic challenge
 Allow user to reset their password via a specially crafted url.
+
+- Created a route to reset-password where user can change thier password. 
+- This option is only available for login user.
 
 ## The pro challenge
 Send the specially crafted url via email to the user.
 
+- Created a route for user to submit a request to reset password. 
+- Created a route for user to reset password with the token.
+- To send the email, MAIL_URL need to be set up in the environment. 
+
 ## The bonus challenge
 Fix the design flaw in the registration form that allow this problem to happen.
+
+- Setup backend valiation for password field and confirm-password field.
+- Setup forntend validation for password field and confirm-password field. The border of the confirm-password field will turn green if it matches eith the password field.
